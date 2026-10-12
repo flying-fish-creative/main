@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "links": [
+      { "label": "Work", "href": "#work" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Studio", "href": "#studio" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta": {
+      "label": "Get in touch",
+      "href": "#contact"
+    }
+  },
+  "work": {
+    "eyebrow": "Case Studies",
+    "heading": "Work to make\nyour mum proud",
+    "cta": "Take a deeper dive",
+    "cases": [
+      { "number": "01", "title": "Aura Campaign", "category": "Brand & Art Direction", "client": "Aura Collective", "year": "2025", "image": "images/Case-study-ph-1.png" },
+      { "number": "02", "title": "Reverie", "category": "Campaign", "client": "Reverie Studios", "year": "2025", "image": "images/Case-study-ph-2.png" },
+      { "number": "03", "title": "Kinetic", "category": "Product Design", "client": "Kinetic Sport", "year": "2024", "image": "images/Case-study-ph-3.png" },
+      { "number": "04", "title": "Prisma Beauty", "category": "Identity & Web", "client": "Prisma Labs", "year": "2024", "image": "images/Case-study-ph-4.png" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "items": [
+      {
+        "label": "People-obsessed Product Thinking",
+        "headline": "Never forgetting there's a real person on the other side of the screen.",
+        "disciplines": ["UX/UI Design", "Digital Experiences", "Design Systems"],
+        "color": "blue-tang"
+      },
+      {
+        "label": "Visceral Visual Storytelling",
+        "headline": "Making you feel something in your chest before your brain has caught up.",
+        "disciplines": ["Brand Storytelling", "360° Campaign Advertising", "Art Direction"],
+        "color": "bicolor-blenny"
+      },
+      {
+        "label": "Unapologetically Culture-led Creative",
+        "headline": "Reflecting the world back at people so they feel seen.",
+        "disciplines": ["Brand Identity and Strategy", "Social and Marketing", "Creative Direction"],
+        "color": "garibaldi"
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "Good Company",
+    "heading": "They Trusted\nThe Fish",
+    "body": "We don't name drop. But here are some names. From global heavyweights to independent voices and everything in between.",
+    "logos": [
+      { "name": "HSBC", "file": "images/clients/HSBC_logo.png" },
+      { "name": "Honda", "file": "images/clients/honda-logo.png" },
+      { "name": "Transport for London", "file": "images/clients/tfl-logo.png" },
+      { "name": "Virgin", "file": "images/clients/virgin-logo.png" },
+      { "name": "EE", "file": "images/clients/ee-logo.png" },
+      { "name": "Amazon", "file": "images/clients/amazon-logo.png" },
+      { "name": "Toyota", "file": "images/clients/toyota-logo.png" },
+      { "name": "Purina", "file": "images/clients/purina-logo.png" },
+      { "name": "Allwyn", "file": "images/clients/allwyn-logo.png" },
+      { "name": "Lego", "file": "images/clients/lego-logo.png" },
+      { "name": "Duracell", "file": "images/clients/duracell-logo.png" },
+      { "name": "IKEA", "file": "images/clients/ikea-logo.png" },
+      { "name": "Biffa", "file": "images/clients/biffa-logo.png" },
+      { "name": "Avon", "file": "images/clients/avon-logo.png" },
+      { "name": "Bayer", "file": "images/clients/bayer-logo.png" },
+      { "name": "Lloyds", "file": "images/clients/lloyds-logo.png" }
+    ]
+  },
+  "studio": {
+    "eyebrow": "The Studio",
+    "heading": "We're the Ones\nIn the Room",
+    "subheading": "Passionate. A Little Chaotic. Annoyingly Good.",
+    "body": "We bring the thinking, the craft, and the occasional 2am epiphany. It's a lot, and it shows in the work.",
+    "cta": "We Built This. Come See.",
+    "ctaHref": "#"
+  },
+  "contact": {
+    "eyebrow": "Got a project? Let's talk.",
+    "heading": "Oat flat whites and\nPains Au Chocolat\non us",
+    "subline": "Tell us about your \"what if\" and we'll take it from there.",
+    "cta": "Swim with us",
+    "ctaHref": "#"
+  },
+  "footer": {
+    "tagline": "Product thinking. Visual storytelling. Culture-led creative.",
+    "email": "info@flying-fish.co.uk",
+    "navigate": [
+      { "label": "Why We Fly", "href": "#why-we-fly" },
+      { "label": "Work", "href": "#work" },
+      { "label": "Services", "href": "#services" },
+      { "label": "The Studio", "href": "#studio" },
+      { "label": "Say Hello", "href": "#contact" }
+    ],
+    "legal": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Accessibility", "href": "#" },
+      { "label": "Cookie Policy", "href": "#" }
+    ],
+    "copyright": "© 2026 Flying Fish Studio. Made with care in London."
+  }
+}

@@ -1,0 +1,42 @@
+/* ============================================================
+   FLYING FISH — DESIGN TOKENS
+   Single source of truth for colour, type, radius, and spacing.
+
+   Rule: every build only pulls values from this file. If a
+   design needs something not listed here, add it here first —
+   don't introduce a one-off value directly in a page.
+   ============================================================ */
+
+:root {
+
+  --color-rasboras: #CEFF00;
+  --color-black-molly: #222222;
+  --color-cream-angel: #F3F0EB;
+
+  --color-red-snapper: #DA0C19;
+  --color-blue-tang: #1C4AE5;
+  --color-garibaldi: #FE572A;
+  --color-bicolor-blenny: #B489D5;
+
+  --font-display: 'Work Sans', sans-serif;
+  --font-ui: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --radius-pill: 9999px;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-2xl: 96px;
+
+  /* ---- Type Scale ----
+     Minimum body font size is 16px.
+     14px permitted only for labels and metadata — use sparingly.
+  */
+  --text-xs: 14px;    /* labels, metadata only */
+  --text-sm: 16px;    /* small body copy */
+  --text-md: 18px;    /* body copy */
+  --text-lg: 24px;    /* large body / intro */
+}
