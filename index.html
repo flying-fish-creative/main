@@ -1268,6 +1268,25 @@
       max-width: 400px;
     }
 
+    .modal__done {
+      font-family: var(--font-ui);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-cream-angel);
+      background: var(--color-black-molly);
+      border: none;
+      border-radius: 999px;
+      padding: 14px 48px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      transition: opacity 0.2s;
+    }
+
+    .modal__done:hover {
+      opacity: 0.85;
+    }
+
     @media (max-width: 768px) {
       .modal__row {
         grid-template-columns: 1fr;
@@ -1561,6 +1580,7 @@
       <div class="modal__success" id="modal-success">
         <p class="modal__success-heading">You're in the water. 🐟</p>
         <p class="modal__success-body">We'll be in touch soon. In the meantime, grab a coffee — oat flat white, ideally.</p>
+        <button class="modal__done" id="modal-done" type="button">Done</button>
       </div>
     </div>
   </div>
@@ -1647,7 +1667,14 @@
     const contactForm = document.getElementById('contact-form');
     const modalSuccess = document.getElementById('modal-success');
 
+    function resetModal() {
+      contactForm.style.display = '';
+      modalSuccess.style.display = 'none';
+      contactForm.reset();
+    }
+
     function openModal() {
+      resetModal();
       modal.classList.add('is-open');
       document.body.style.overflow = 'hidden';
     }
@@ -1671,6 +1698,7 @@
 
     modalClose.addEventListener('click', closeModal);
     modalBackdrop.addEventListener('click', closeModal);
+    document.getElementById('modal-done').addEventListener('click', closeModal);
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeModal();
