@@ -788,15 +788,24 @@
       padding: 0;
     }
 
+    .wordmark-bridge {
+      background-color: var(--color-rasboras);
+      height: 1vw;
+      margin-bottom: -1vw;
+      position: relative;
+      z-index: 0;
+    }
+
     .wordmark-banner {
-      background-color: #111;
+      background: linear-gradient(to bottom, transparent 5%, #111 5%);
       display: block;
       margin: 0;
-      margin-top: -4px;
       padding: 0;
       line-height: 0;
       width: 100%;
       overflow: hidden;
+      position: relative;
+      z-index: 1;
     }
 
     .wordmark-banner__img {
@@ -1252,6 +1261,11 @@
       padding: var(--space-xl) 0;
     }
 
+    .modal__success-finn {
+      width: 64px;
+      height: auto;
+    }
+
     .modal__success-heading {
       font-family: var(--font-display);
       font-size: clamp(28px, 4vw, 44px);
@@ -1501,6 +1515,8 @@
     <a class="contact-cta__btn fade-up" href="#">Swim with us →</a>
   </section>
 
+  <div class="wordmark-bridge"></div>
+
   <div class="wordmark-banner">
     <img src="images/flying-fish-logo-2.svg" alt="Flying Fish" class="wordmark-banner__img" />
   </div>
@@ -1511,10 +1527,10 @@
         <p class="footer__tagline">Product thinking. Visual storytelling. Culture-led creative.</p>
         <a class="footer__email" href="mailto:info@flying-fish.co.uk">info@flying-fish.co.uk</a>
         <div class="footer__socials">
-          <a class="footer__social" href="#" aria-label="Instagram">
+          <a class="footer__social" href="#" aria-label="Instagram" style="display:none;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           </a>
-          <a class="footer__social" href="#" aria-label="LinkedIn">
+          <a class="footer__social" href="https://www.linkedin.com/company/flying-fish-creative-uk/home/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
         </div>
@@ -1556,16 +1572,16 @@
         <div class="modal__row">
           <div class="modal__field">
             <label class="modal__label" for="first-name">First name</label>
-            <input class="modal__input" type="text" id="first-name" name="first-name" placeholder="Fabiola" required />
+            <input class="modal__input" type="text" id="first-name" name="first-name" placeholder="Partick" required />
           </div>
           <div class="modal__field">
             <label class="modal__label" for="last-name">Last name</label>
-            <input class="modal__input" type="text" id="last-name" name="last-name" placeholder="Caceres" required />
+            <input class="modal__input" type="text" id="last-name" name="last-name" placeholder="Sherman" required />
           </div>
         </div>
         <div class="modal__field">
           <label class="modal__label" for="email">Email address</label>
-          <input class="modal__input" type="email" id="email" name="email" placeholder="hello@yourcompany.com" required />
+          <input class="modal__input" type="email" id="email" name="email" placeholder="partick@justkeepswimming.com" required />
         </div>
         <div class="modal__field">
           <label class="modal__label" for="phone">Phone number <span class="modal__optional">(optional)</span></label>
@@ -1578,7 +1594,8 @@
         <button class="modal__submit" type="submit">Send it over →</button>
       </form>
       <div class="modal__success" id="modal-success">
-        <p class="modal__success-heading">You're in the water. 🐟</p>
+        <img class="modal__success-finn" src="images/Finn.svg" alt="Finn the flying fish" />
+        <p class="modal__success-heading">You're in the <span style="color: var(--color-blue-tang)">water</span>.</p>
         <p class="modal__success-body">We'll be in touch soon. In the meantime, grab a coffee — oat flat white, ideally.</p>
         <button class="modal__done" id="modal-done" type="button">Done</button>
       </div>
@@ -1669,6 +1686,7 @@
 
     function resetModal() {
       contactForm.style.display = '';
+        document.querySelector('#contact-modal .modal__header').style.display = '';
       modalSuccess.style.display = 'none';
       contactForm.reset();
     }
@@ -1714,6 +1732,7 @@
       })
       .then(() => {
         contactForm.style.display = 'none';
+        document.querySelector('#contact-modal .modal__header').style.display = 'none';
         modalSuccess.style.display = 'flex';
       })
       .catch(() => {
