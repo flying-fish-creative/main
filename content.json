@@ -1,103 +1,201 @@
 {
-  "nav": {
-    "links": [
-      { "label": "Work", "href": "#work" },
-      { "label": "Services", "href": "#services" },
-      { "label": "Studio", "href": "#studio" },
-      { "label": "Contact", "href": "#contact" }
+  "_README": "This file controls all editable copy on both pages. Edit values here, not in the HTML. Changes take effect on next deploy.",
+
+  "homepage": {
+
+    "nav": {
+      "links": [
+        { "label": "Why we fly", "href": "#why-we-fly" },
+        { "label": "Services", "href": "#services" },
+        { "label": "The studio", "href": "studio.html" }
+      ],
+      "cta": { "label": "Swim with us", "href": "#contact" }
+    },
+
+    "hero": {
+      "tagline": "Possibility, with wings.",
+      "metaLeft": "Est. 2026",
+      "metaRight": "London, UK"
+    },
+
+    "ticker": [
+      "Brand Identity & Storytelling",
+      "Creative Direction",
+      "Art Direction",
+      "Digital Experiences",
+      "Web Design",
+      "Motion & Animation",
+      "End-to-end Product Thinking"
     ],
-    "cta": {
-      "label": "Get in touch",
-      "href": "#contact"
+
+    "why": {
+      "eyebrow": "Why We Fly",
+      "heading": "We're here for brands\nready to turn\nwhat if into what is"
+    },
+
+    "services": {
+      "eyebrow": "Services",
+      "panels": [
+        {
+          "label": "People-obsessed Product Thinking",
+          "headline": "Never forgetting there's a real person on the other side of the screen.",
+          "disciplines": ["UX/UI Design", "Digital Experiences", "Design Systems"],
+          "color": "blue-tang"
+        },
+        {
+          "label": "Visceral Visual Storytelling",
+          "headline": "Making you feel something in your chest before your brain has caught up.",
+          "disciplines": ["Brand Storytelling", "360° Campaign Advertising", "Art Direction"],
+          "color": "bicolor-blenny"
+        },
+        {
+          "label": "Unapologetically Culture-led Creative",
+          "headline": "Reflecting the world back at people so they feel seen.",
+          "disciplines": ["Brand Identity and Strategy", "Social and Marketing", "Creative Direction"],
+          "color": "garibaldi"
+        }
+      ]
+    },
+
+    "clients": {
+      "eyebrow": "Good Company",
+      "heading": "They Trusted\nThe Fish",
+      "body": "We don't name drop. But here are some names. From global heavyweights to independent voices and everything in between.",
+      "logos": [
+        { "name": "HSBC", "file": "images/clients/HSBC_logo.png" },
+        { "name": "Honda", "file": "images/clients/honda-logo.png" },
+        { "name": "Transport for London", "file": "images/clients/tfl-logo.png" },
+        { "name": "Virgin", "file": "images/clients/virgin-logo.png" },
+        { "name": "EE", "file": "images/clients/ee-logo.png" },
+        { "name": "Amazon", "file": "images/clients/amazon-logo.png" },
+        { "name": "Toyota", "file": "images/clients/toyota-logo.png" },
+        { "name": "Purina", "file": "images/clients/purina-logo.png" },
+        { "name": "Allwyn", "file": "images/clients/allwyn-logo.png" },
+        { "name": "Lego", "file": "images/clients/lego-logo.png" },
+        { "name": "Duracell", "file": "images/clients/duracell-logo.png" },
+        { "name": "IKEA", "file": "images/clients/ikea-logo.png" },
+        { "name": "Biffa", "file": "images/clients/biffa-logo.png" },
+        { "name": "Avon", "file": "images/clients/avon-logo.png" },
+        { "name": "Bayer", "file": "images/clients/bayer-logo.png" },
+        { "name": "Lloyds", "file": "images/clients/lloyds-logo.png" }
+      ]
+    },
+
+    "studioTeaser": {
+      "eyebrow": "The Studio",
+      "heading": "We're the Ones\nIn the Room",
+      "subheading": "Passionate. A Little Chaotic. Annoyingly Good.",
+      "body": "We bring the thinking, the craft, and the occasional 2am epiphany. It's a lot, and it shows in the work.",
+      "cta": "We Built This. Come See.",
+      "ctaHref": "studio.html"
+    },
+
+    "contact": {
+      "eyebrow": "Got a project? Let's talk.",
+      "heading": "Oat flat whites and\nPains Au Chocolat\non us",
+      "subline": "Tell us about your \"what if\" and we'll take it from there.",
+      "cta": "Swim with us"
+    },
+
+    "footer": {
+      "tagline": "Product thinking. Visual storytelling. Culture-led creative.",
+      "email": "info@flying-fish.co.uk",
+      "navigate": [
+        { "label": "Why We Fly", "href": "#why-we-fly" },
+        { "label": "Services", "href": "#services" },
+        { "label": "The Studio", "href": "studio.html" },
+        { "label": "Say Hello", "href": "#contact" }
+      ],
+      "legal": [
+        { "label": "Privacy Policy", "href": "#" },
+        { "label": "Accessibility", "href": "#" },
+        { "label": "Cookie Policy", "href": "#" }
+      ],
+      "copyright": "© 2026 Flying Fish Studio. Made with care in London."
     }
   },
-  "work": {
-    "eyebrow": "Case Studies",
-    "heading": "Work to make\nyour mum proud",
-    "cta": "Take a deeper dive",
-    "cases": [
-      { "number": "01", "title": "Aura Campaign", "category": "Brand & Art Direction", "client": "Aura Collective", "year": "2025", "image": "images/Case-study-ph-1.png" },
-      { "number": "02", "title": "Reverie", "category": "Campaign", "client": "Reverie Studios", "year": "2025", "image": "images/Case-study-ph-2.png" },
-      { "number": "03", "title": "Kinetic", "category": "Product Design", "client": "Kinetic Sport", "year": "2024", "image": "images/Case-study-ph-3.png" },
-      { "number": "04", "title": "Prisma Beauty", "category": "Identity & Web", "client": "Prisma Labs", "year": "2024", "image": "images/Case-study-ph-4.png" }
-    ]
-  },
-  "services": {
-    "eyebrow": "Services",
-    "items": [
-      {
-        "label": "People-obsessed Product Thinking",
-        "headline": "Never forgetting there's a real person on the other side of the screen.",
-        "disciplines": ["UX/UI Design", "Digital Experiences", "Design Systems"],
-        "color": "blue-tang"
-      },
-      {
-        "label": "Visceral Visual Storytelling",
-        "headline": "Making you feel something in your chest before your brain has caught up.",
-        "disciplines": ["Brand Storytelling", "360° Campaign Advertising", "Art Direction"],
-        "color": "bicolor-blenny"
-      },
-      {
-        "label": "Unapologetically Culture-led Creative",
-        "headline": "Reflecting the world back at people so they feel seen.",
-        "disciplines": ["Brand Identity and Strategy", "Social and Marketing", "Creative Direction"],
-        "color": "garibaldi"
-      }
-    ]
-  },
-  "clients": {
-    "eyebrow": "Good Company",
-    "heading": "They Trusted\nThe Fish",
-    "body": "We don't name drop. But here are some names. From global heavyweights to independent voices and everything in between.",
-    "logos": [
-      { "name": "HSBC", "file": "images/clients/HSBC_logo.png" },
-      { "name": "Honda", "file": "images/clients/honda-logo.png" },
-      { "name": "Transport for London", "file": "images/clients/tfl-logo.png" },
-      { "name": "Virgin", "file": "images/clients/virgin-logo.png" },
-      { "name": "EE", "file": "images/clients/ee-logo.png" },
-      { "name": "Amazon", "file": "images/clients/amazon-logo.png" },
-      { "name": "Toyota", "file": "images/clients/toyota-logo.png" },
-      { "name": "Purina", "file": "images/clients/purina-logo.png" },
-      { "name": "Allwyn", "file": "images/clients/allwyn-logo.png" },
-      { "name": "Lego", "file": "images/clients/lego-logo.png" },
-      { "name": "Duracell", "file": "images/clients/duracell-logo.png" },
-      { "name": "IKEA", "file": "images/clients/ikea-logo.png" },
-      { "name": "Biffa", "file": "images/clients/biffa-logo.png" },
-      { "name": "Avon", "file": "images/clients/avon-logo.png" },
-      { "name": "Bayer", "file": "images/clients/bayer-logo.png" },
-      { "name": "Lloyds", "file": "images/clients/lloyds-logo.png" }
-    ]
-  },
+
   "studio": {
-    "eyebrow": "The Studio",
-    "heading": "We're the Ones\nIn the Room",
-    "subheading": "Passionate. A Little Chaotic. Annoyingly Good.",
-    "body": "We bring the thinking, the craft, and the occasional 2am epiphany. It's a lot, and it shows in the work.",
-    "cta": "We Built This. Come See.",
-    "ctaHref": "#"
-  },
-  "contact": {
-    "eyebrow": "Got a project? Let's talk.",
-    "heading": "Oat flat whites and\nPains Au Chocolat\non us",
-    "subline": "Tell us about your \"what if\" and we'll take it from there.",
-    "cta": "Swim with us",
-    "ctaHref": "#"
-  },
-  "footer": {
-    "tagline": "Product thinking. Visual storytelling. Culture-led creative.",
-    "email": "info@flying-fish.co.uk",
-    "navigate": [
-      { "label": "Why We Fly", "href": "#why-we-fly" },
-      { "label": "Work", "href": "#work" },
-      { "label": "Services", "href": "#services" },
-      { "label": "The Studio", "href": "#studio" },
-      { "label": "Say Hello", "href": "#contact" }
-    ],
-    "legal": [
-      { "label": "Privacy Policy", "href": "#" },
-      { "label": "Accessibility", "href": "#" },
-      { "label": "Cookie Policy", "href": "#" }
-    ],
-    "copyright": "© 2026 Flying Fish Studio. Made with care in London."
+
+    "nav": {
+      "links": [
+        { "label": "Why we fly", "href": "index.html#why-we-fly" },
+        { "label": "Services", "href": "index.html#services" },
+        { "label": "The studio", "href": "studio.html" }
+      ],
+      "cta": { "label": "Swim with us", "href": "#contact" }
+    },
+
+    "hero": {
+      "eyebrow": "The Studio",
+      "heading": "We're the ones\nin the room"
+    },
+
+    "why": {
+      "headline": "We're here for brands\nready to turn\nwhat if into what is",
+      "body": "People-obsessed product thinking. Visceral visual storytelling. And unapologetically culture-led creative. We work across the full creative spectrum. Not for every brand. Just the ones bold enough to mean it."
+    },
+
+    "scrollVideo": {
+      "eyebrow": "It's easy to say someday. Or worse:\nmaybe when pigs fly.",
+      "heading": "Why wait for flying pigs,\nwhen we already have flying fish?",
+      "body": "Forget the pig. Still waiting for their ideas to fly. Think fish.\nThat's what possibility, with wings, actually looks like."
+    },
+
+    "team": {
+      "eyebrow": "Our Team",
+      "heading": "Small on Purpose",
+      "body": "Two founders. One studio. No middle-women. Just us. Thinking, making, and sweating the details on everything we touch. We started Flying Fish in the pub, like all the best ideas. Built on the belief that the best creative comes from people who are genuinely invested. In the idea, in the brand, in the outcome.",
+      "members": [
+        {
+          "name": "Fabiola Caceres Cardenas",
+          "role": "Experience Design Director",
+          "bio": "Faby designs the parts people actually use. She thinks in flows, systems, and the spaces between clicks, making sure every digital experience feels considered rather than cobbled together.",
+          "image": "images/our team/Experience Design Director.webp"
+        },
+        {
+          "name": "Rianna Woods",
+          "role": "Executive Creative Directorr",
+          "bio": "The vision person. Start to finish, brief to final build. Rianna leads the creative across every stage: strategy, concept, art direction, execution, shaping how brands look, feel, and show up in the world. The kind of CD who's in it from the first conversation to the last decision.",
+          "image": "images/our team/Executive Creative Directorr.webp"
+        },
+        {
+          "name": "Marchello",
+          "role": "HR Department",
+          "bio": "Complaints, concerns, existential crises. Marchello handles them all with the same response: leaning on you until you feel better. He has never once enforced a policy. He has never needed to.",
+          "image": "images/our team/HR Department.webp"
+        },
+        {
+          "name": "The Duo",
+          "role": "Human-Led, AI-Fluent",
+          "bio": "They've been working with AI tools long before it became everyone's personality. Midjourney, Firefly, Eleven Labs, Flow. Not as a shortcut. As a craft.",
+          "image": "images/our team/Human-Led, AI-Fluent.webp"
+        }
+      ]
+    },
+
+    "contact": {
+      "eyebrow": "Got a project? Let's talk.",
+      "heading": "Come find us\nabove the surface.",
+      "subline": "Tell us about your \"what if\" and we'll take it from there.",
+      "cta": "Swim with us"
+    },
+
+    "footer": {
+      "tagline": "Product thinking. Visual storytelling. Culture-led creative.",
+      "email": "info@flying-fish.co.uk",
+      "navigate": [
+        { "label": "Why We Fly", "href": "index.html#why-we-fly" },
+        { "label": "Services", "href": "index.html#services" },
+        { "label": "The Studio", "href": "studio.html" },
+        { "label": "Say Hello", "href": "#contact" }
+      ],
+      "legal": [
+        { "label": "Privacy Policy", "href": "#" },
+        { "label": "Accessibility", "href": "#" },
+        { "label": "Cookie Policy", "href": "#" }
+      ],
+      "copyright": "© 2026 Flying Fish Studio. Made with care in London."
+    }
   }
 }
