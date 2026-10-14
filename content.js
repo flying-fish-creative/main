@@ -154,7 +154,7 @@ var SITE_CONTENT = {
           "name": "Rianna Woods",
           "role": "Executive Creative Director",
           "bio": "The vision person. Rianna leads the creative from brief to final build, across strategy, concept, art direction and execution.\nThe kind of CD who's in it from the first conversation to the last decision.",
-          "image": "images/our team/Executive Creative Directorr.webp"
+          "image": "images/our team/Executive Creative Director.webp"
         },
         {
           "name": "Marchello",
