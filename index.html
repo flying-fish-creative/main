@@ -1486,7 +1486,7 @@
 
   <section class="studio" id="studio">
     <div class="studio__media">
-      <video class="studio__video" id="studio-video" autoplay muted loop playsinline>
+      <video class="studio__video" id="studio-video" muted loop playsinline preload="none">
         <source src="images/TheStudio.mp4" type="video/mp4">
       </video>
       <button class="studio__toggle" id="studio-toggle" aria-label="Pause video">
@@ -2048,6 +2048,27 @@
       els.forEach(el => observer.observe(el));
     })();
 
+  </script>
+
+  <!-- Lazy-load below-fold videos -->
+  <script>
+  (function lazyVideos() {
+    var studioVid = document.getElementById('studio-video');
+    if (!studioVid) return;
+    var loaded = false;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !loaded) {
+          loaded = true;
+          studioVid.preload = 'auto';
+          studioVid.load();
+          studioVid.play().catch(function() {});
+          observer.disconnect();
+        }
+      });
+    }, { rootMargin: '200px' });
+    observer.observe(studioVid);
+  })();
   </script>
 </body>
 </html>

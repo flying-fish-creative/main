@@ -1199,7 +1199,7 @@
         <p class="studio-scroll-video__body">Forget the pig. Still waiting for their ideas to fly. Think fish.<br>That's what possibility, with wings, actually looks like.</p>
       </div>
       <div class="studio-scroll-video__frame" id="scroll-video-frame">
-        <video class="studio-scroll-video__video" id="scroll-video" muted playsinline preload="auto">
+        <video class="studio-scroll-video__video" id="scroll-video" muted playsinline preload="none">
           <source src="images/BrandVideo-cut.mp4" type="video/mp4">
         </video>
       </div>
@@ -2032,5 +2032,25 @@
   </script>
 
   <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <!-- Lazy-load below-fold video -->
+  <script>
+  (function lazyScrollVideo() {
+    var scrollVid = document.getElementById('scroll-video');
+    if (!scrollVid) return;
+    var loaded = false;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !loaded) {
+          loaded = true;
+          scrollVid.preload = 'auto';
+          scrollVid.load();
+          observer.disconnect();
+        }
+      });
+    }, { rootMargin: '400px' });
+    observer.observe(scrollVid);
+  })();
+  </script>
 </body>
 </html>
